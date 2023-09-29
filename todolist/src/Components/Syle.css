@@ -1,0 +1,110 @@
+nav{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 1rem;
+    padding: 10px 29px;
+    box-shadow: 2px 2px 2px #ccc;
+
+}
+ .img{
+    height: 100%;
+}
+form{
+    margin-top: 2vh;
+    height: 8vh;
+    width: 100vw;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    box-shadow: 2px 2px 2px #ccc;
+}
+.flex{
+    height: 70%;
+    display: flex;
+    gap: 10px;
+}
+form input{
+    height: 70%;
+    padding-left: 15px;
+    width: 18vh;
+}
+form button{
+    margin-top: 1vh;
+    width: 150px;
+    height: 2.2rem;
+}
+.singlelist{
+    border: 1px solid black;
+    position: relative;
+    background-color: rgb(212, 212, 134);
+}
+.singlelist-container{
+    height: auto;
+    width: 95vw;
+    display:grid;
+    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    margin-inline:auto ;
+    margin-top: 2vh;
+}
+.singlelist p{
+    padding-left: 10px;
+    width: 270px;
+    word-wrap: break-word;
+}
+.singlelist button{
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: red;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+@media screen and (min-width: 800px) {  
+    nav{
+        width: 95vw;
+    }
+                 /* for tablets */
+
+ form{
+    flex-direction: row;
+
+ }
+ form button{
+    margin-top: -1vh;
+    margin-left: 1vh;
+ }
+ form input{
+    width: 26vh;
+ }
+}
+
+@media screen and (min-width: 1200px) {      /* for pc */
+
+    nav{
+        width: 98vw;
+    }
+
+    form{
+       flex-direction: row;
+       width: 100vw;
+    }
+    
+   }
+   .singlelist-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline:auto ;
+    margin-top: 2vh;
+}
